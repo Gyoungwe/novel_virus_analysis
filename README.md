@@ -1,6 +1,6 @@
 # Novel_virus_analyse
 The raw data used for this analysis can be downloaded from NCBI(...url...), and the intermediate files can be found on Zotodo(...url...).
-Step1_we assembled the chloroplast genome using GetOrganelle version (1.7.7.0)
+Step1 we assembled the chloroplast genome using GetOrganelle version (1.7.7.0)
 ```
 #Maximum number of reads to be used per file
 --max-reads inf
@@ -12,7 +12,7 @@ Step1_we assembled the chloroplast genome using GetOrganelle version (1.7.7.0)
 get_organelle_from_reads.py -1 JPSH_1.fq.gz -2 JPSH_2.fq.gz -t 96 -o JPSH.plastome.deep -F embplant_pt -R 15 --max-reads inf --reduce-reads-for-coverage inf
 ```
 
-Step2
+Step2 To remove adapter sequences and low-quality reads, use Trimmomatic version （0.39）
 
 ```
 trimmomatic PE ./JPSH_1.fq.gz  ./JPSH_2.fq.gz  -phred33 out_read1.fq read1_unpaired.fq  out_read2.fq read2_unpaired.fq ILLUMINACLIP:./TruSeq3-PE.fa:2:30:10:8:TRUE  LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36 -threads 20
@@ -125,10 +125,17 @@ U	10808	3088
 ```
 R_script usage :
 base_counts.R" and "sRNA_peak.R" only require you to set the working directory to the location where the output files of "sRNA_analyse.py" are located, and set "file_names" to the prefix of the files for them to function properly
+
 ```setwd("where/the/output/files/of/'sRNA_analyse.py'")```
+
 Example:
+
 ```file_names <- c("TRINITY_DN787_c0_g1_i1", "TRINITY_DN5_c0_g1_i1","TRINITY_DN66897_c0_g1_i1","virus5","TRINITY_DN773_c0_g2_i1","TRINITY_DN773_c0_g1_i1")```
+
 gene_structure.R
-	Manually input the predicted loci, along with the depth file generated using SAMtools, as inputs
+
+ Manually input the predicted loci, along with the depth file generated using SAMtools, as inputs
+
 sRNA_depth.R
-	Calculate the forward and reverse depth for each sequence using SAMools depth, and use it as an input file
+
+ Calculate the forward and reverse depth for each sequence using SAMools depth, and use it as an input file
