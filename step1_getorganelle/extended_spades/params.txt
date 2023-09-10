@@ -1,0 +1,48 @@
+Command line: /share/home/gaoyangwei/miniconda3/envs/getorganelle/bin/spades.py	-t	20	--phred-offset	33	-1	/share/home/gaoyangwei/exercise/project/aphid_virus/step10_getorganelle/plastome_output/extended_1_paired.fq	-2	/share/home/gaoyangwei/exercise/project/aphid_virus/step10_getorganelle/plastome_output/extended_2_paired.fq	--s1	/share/home/gaoyangwei/exercise/project/aphid_virus/step10_getorganelle/plastome_output/extended_1_unpaired.fq	--s2	/share/home/gaoyangwei/exercise/project/aphid_virus/step10_getorganelle/plastome_output/extended_2_unpaired.fq	-k	21,35,45,65,85,105,111,115,121,125	-o	/share/home/gaoyangwei/exercise/project/aphid_virus/step10_getorganelle/plastome_output/extended_spades	
+
+System information:
+  SPAdes version: 3.13.0
+  Python version: 3.7.12
+  OS: Linux-3.10.0-1160.el7.x86_64-x86_64-with-centos-7.9.2009-Core
+
+Output dir: /share/home/gaoyangwei/exercise/project/aphid_virus/step10_getorganelle/plastome_output/extended_spades
+Mode: read error correction and assembling
+Debug mode is turned OFF
+
+Dataset parameters:
+  Multi-cell mode (you should set '--sc' flag if input data was obtained with MDA (single-cell) technology or --meta flag if processing metagenomic dataset)
+  Reads:
+    Library number: 1, library type: paired-end
+      orientation: fr
+      left reads: ['/share/home/gaoyangwei/exercise/project/aphid_virus/step10_getorganelle/plastome_output/extended_1_paired.fq']
+      right reads: ['/share/home/gaoyangwei/exercise/project/aphid_virus/step10_getorganelle/plastome_output/extended_2_paired.fq']
+      interlaced reads: not specified
+      single reads: not specified
+      merged reads: not specified
+    Library number: 2, library type: single
+      left reads: not specified
+      right reads: not specified
+      interlaced reads: not specified
+      single reads: ['/share/home/gaoyangwei/exercise/project/aphid_virus/step10_getorganelle/plastome_output/extended_1_unpaired.fq']
+      merged reads: not specified
+    Library number: 3, library type: single
+      left reads: not specified
+      right reads: not specified
+      interlaced reads: not specified
+      single reads: ['/share/home/gaoyangwei/exercise/project/aphid_virus/step10_getorganelle/plastome_output/extended_2_unpaired.fq']
+      merged reads: not specified
+Read error correction parameters:
+  Iterations: 1
+  PHRED offset: 33
+  Corrected reads will be compressed
+Assembly parameters:
+  k: [21, 35, 45, 65, 85, 105, 111, 115, 121, 125]
+  Repeat resolution is enabled
+  Mismatch careful mode is turned OFF
+  MismatchCorrector will be SKIPPED
+  Coverage cutoff is turned OFF
+Other parameters:
+  Dir for temp files: /share/home/gaoyangwei/exercise/project/aphid_virus/step10_getorganelle/plastome_output/extended_spades/tmp
+  Threads: 20
+  Memory limit (in Gb): 250
+

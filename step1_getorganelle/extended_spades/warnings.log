@@ -1,0 +1,12 @@
+
+=== Error correction and assembling warnings:
+ * 0:00:08.230    80M / 11G   WARN    General                 (kmer_coverage_model.cpp   : 327)   Valley value was estimated improperly, reset to 2
+ * 0:00:08.231    80M / 11G   WARN    General                 (kmer_coverage_model.cpp   : 366)   Failed to determine erroneous kmer threshold. Threshold set to: 2
+ * 0:00:08.584    80M / 11G   WARN    General                 (kmer_coverage_model.cpp   : 327)   Valley value was estimated improperly, reset to 1
+ * 0:00:08.585    80M / 11G   WARN    General                 (kmer_coverage_model.cpp   : 366)   Failed to determine erroneous kmer threshold. Threshold set to: 1
+ * 0:00:06.256    80M / 11G   WARN    General                 (kmer_coverage_model.cpp   : 218)   Too many erroneous kmers, the estimates might be unreliable
+ * 0:00:13.517    80M / 11G   WARN    General                 (simplification.cpp        : 479)   The determined erroneous connection coverage threshold may be determined improperly
+ * 0:00:09.365    80M / 11G   WARN    General                 (kmer_coverage_model.cpp   : 366)   Failed to determine erroneous kmer threshold. Threshold set to: 19
+ * 0:00:11.138    80M / 11G   WARN    General                 (kmer_coverage_model.cpp   : 366)   Failed to determine erroneous kmer threshold. Threshold set to: 23
+ * 0:00:08.787    80M / 11G   WARN    General                 (kmer_coverage_model.cpp   : 366)   Failed to determine erroneous kmer threshold. Threshold set to: 14
+======= Warnings saved to /share/home/gaoyangwei/exercise/project/aphid_virus/step10_getorganelle/plastome_output/extended_spades/warnings.log

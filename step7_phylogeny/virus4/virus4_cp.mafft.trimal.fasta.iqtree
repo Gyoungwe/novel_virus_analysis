@@ -1,0 +1,345 @@
+IQ-TREE 2.0.3 built Dec 20 2020
+
+Input file name: virus4_cp.mafft.trimal.fasta
+Type of analysis: ModelFinder + tree reconstruction + non-parametric bootstrap (1000 replicates)
+Random seed number: 174438
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 21 sequences with 769 amino-acid sites
+Number of constant sites: 87 (= 11.3134% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 87 (= 11.3134% of all sites)
+Number of parsimony informative sites: 516
+Number of distinct site patterns: 724
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: LG+F+G4
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+LG+F+G4          -17471.680   35061.359 - 6.64e-05   35071.345 - 0.000166   35335.419 +    0.858
+LG+F+R4          -17457.060   35042.119 +        1   35053.937 +        1   35339.405 +    0.117
+LG+F+I+G4        -17471.945   35063.891 - 1.87e-05   35074.230 - 3.92e-05   35342.596 -   0.0237
+VT+F+G4          -17478.292   35074.583 - 8.92e-08   35084.569 - 2.23e-07   35348.643 -  0.00115
+WAG+F+G4         -17479.646   35077.293 -  2.3e-08   35087.279 - 5.75e-08   35351.353 - 0.000297
+VT+F+I+G4        -17478.554   35077.108 - 2.52e-08   35087.447 - 5.29e-08   35355.813 -  3.2e-05
+WAG+F+I+G4       -17479.910   35079.819 - 6.51e-09   35090.158 - 1.36e-08   35358.525 - 8.24e-06
+WAG+F+R4         -17467.862   35063.724 - 2.04e-05   35075.542 - 2.03e-05   35361.010 - 2.38e-06
+VT+F+R4          -17468.775   35065.550 - 8.17e-06   35077.368 - 8.17e-06   35362.835 - 9.55e-07
+rtREV+F+G4       -17492.617   35103.235 - 5.36e-14   35113.221 - 1.34e-13   35377.295 - 6.92e-10
+rtREV+F+I+G4     -17492.837   35105.675 - 1.58e-14   35116.014 - 3.31e-14   35384.380 -    2e-11
+rtREV+F+R4       -17479.809   35087.618 - 1.32e-10   35099.436 - 1.32e-10   35384.904 - 1.54e-11
+Blosum62+F+G4    -17525.247   35168.494 - 3.61e-28   35178.480 - 9.03e-28   35442.554 - 4.67e-24
+Blosum62+F+I+G4  -17525.496   35170.991 - 1.04e-28   35181.330 - 2.17e-28   35449.697 - 1.31e-25
+Blosum62+F+R4    -17516.375   35160.750 - 1.74e-26   35172.568 - 1.74e-26   35458.036 - 2.03e-27
+PMB+F+G4         -17547.017   35212.033 - 1.27e-37   35222.019 - 3.17e-37   35486.093 - 1.64e-33
+PMB+F+I+G4       -17547.207   35214.414 - 3.86e-38   35224.753 - 8.09e-38   35493.120 - 4.89e-35
+PMB+F+R4         -17537.960   35203.920 - 7.33e-36   35215.738 - 7.33e-36   35501.206 - 8.58e-37
+VT+G4            -17617.917   35315.833 - 3.66e-60   35320.339 - 1.42e-58   35501.637 - 6.91e-37
+VT+I+G4          -17618.147   35318.294 - 1.07e-60   35323.032 - 3.69e-59   35508.743 - 1.98e-38
+VT+R4            -17608.871   35307.742 - 2.09e-58   35313.468 -  4.4e-57   35516.771 - 3.58e-40
+cpREV+F+G4       -17563.602   35245.204 - 7.96e-45   35255.190 - 1.99e-44   35519.264 - 1.03e-40
+DCMut+F+G4       -17564.103   35246.206 - 4.82e-45   35256.192 -  1.2e-44   35520.266 - 6.23e-41
+Dayhoff+F+G4     -17565.005   35248.009 - 1.96e-45   35257.995 - 4.89e-45   35522.070 - 2.53e-41
+DCMut+F+R4       -17549.676   35227.352 - 5.99e-41   35239.170 - 5.98e-41   35524.638 -    7e-42
+Dayhoff+F+R4     -17550.462   35228.925 - 2.73e-41   35240.743 - 2.73e-41   35526.211 - 3.19e-42
+cpREV+F+I+G4     -17563.849   35247.697 - 2.29e-45   35258.036 - 4.79e-45   35526.403 -  2.9e-42
+DCMut+F+I+G4     -17564.309   35248.619 - 1.44e-45   35258.958 - 3.02e-45   35527.324 - 1.83e-42
+Dayhoff+F+I+G4   -17565.210   35250.419 - 5.86e-46   35260.758 - 1.23e-45   35529.125 - 7.43e-43
+cpREV+F+R4       -17553.192   35234.385 - 1.78e-42   35246.203 - 1.78e-42   35531.671 - 2.08e-43
+JTTDCMut+F+G4    -17575.307   35268.614 - 6.56e-50   35278.600 - 1.64e-49   35542.675 - 8.48e-46
+JTTDCMut+F+R4    -17562.010   35252.019 - 2.63e-46   35263.837 - 2.63e-46   35549.305 - 3.08e-47
+JTTDCMut+F+I+G4  -17575.583   35271.165 - 1.83e-50   35281.504 - 3.84e-50   35549.871 - 2.32e-47
+JTT+F+G4         -17582.014   35282.029 - 8.02e-53   35292.015 -    2e-52   35556.089 - 1.04e-48
+JTT+F+R4         -17568.410   35264.820 - 4.38e-49   35276.638 - 4.38e-49   35562.105 - 5.12e-50
+JTT+F+I+G4       -17582.299   35284.597 - 2.22e-53   35294.936 - 4.65e-53   35563.303 - 2.81e-50
+LG+G4            -17653.965   35387.930 - 8.09e-76   35392.436 - 3.13e-74   35573.734 - 1.53e-52
+WAG+G4           -17655.548   35391.096 - 1.66e-76   35395.601 - 6.43e-75   35576.899 - 3.14e-53
+LG+R4            -17639.471   35368.942 - 1.07e-71   35374.668 - 2.26e-70   35577.971 - 1.84e-53
+LG+I+G4          -17654.197   35390.393 - 2.36e-76   35395.131 - 8.14e-75   35580.842 - 4.37e-54
+WAG+I+G4         -17655.808   35393.616 - 4.71e-77   35398.353 - 1.63e-75   35584.065 - 8.73e-55
+LG+R3            -17650.358   35386.717 - 1.48e-75   35391.936 - 4.02e-74   35586.456 - 2.64e-55
+WAG+R4           -17644.068   35378.135 - 1.08e-73   35383.862 - 2.28e-72   35587.165 - 1.85e-55
+LG+R5            -17639.371   35372.743 - 1.61e-72   35379.001 - 2.59e-71   35591.062 - 2.64e-56
+LG+R2            -17659.987   35401.974 - 7.22e-79   35406.711 - 2.49e-77   35592.422 - 1.34e-56
+JTTDCMut+G4      -17701.512   35483.025 - 1.81e-96   35487.530 - 7.02e-95   35668.828 - 3.42e-73
+JTTDCMut+R4      -17688.012   35466.024 - 8.92e-93   35471.750 - 1.88e-91   35675.053 - 1.52e-74
+JTTDCMut+I+G4    -17701.753   35485.505 - 5.25e-97   35490.243 - 1.81e-95   35675.954 - 9.71e-75
+JTT+G4           -17705.907   35491.813 - 2.24e-98   35496.319 - 8.67e-97   35677.617 - 4.23e-75
+JTT+R4           -17691.991   35473.982 - 1.67e-94   35479.708 - 3.51e-93   35683.011 - 2.85e-76
+JTT+I+G4         -17706.170   35494.339 - 6.33e-99   35499.077 - 2.18e-97   35684.788 - 1.17e-76
+LG               -17725.700   35529.400 - 1.54e-106   35533.680 - 6.69e-105   35710.558 - 2.97e-82
+LG+I             -17723.244   35526.488 - 6.62e-106   35530.993 - 2.56e-104   35712.291 - 1.25e-82
+mtInv+F+R4       -17643.601   35415.202 - 9.68e-82   35427.020 - 9.68e-82   35712.488 - 1.13e-82
+mtInv+F+G4       -17660.384   35438.768 - 7.39e-87   35448.754 - 1.85e-86   35712.828 - 9.55e-83
+mtInv+F+I+G4     -17660.566   35441.132 - 2.27e-87   35451.471 - 4.75e-87   35719.837 - 2.87e-84
+PMB+G4           -17731.569   35543.137 - 1.6e-109   35547.643 - 6.21e-108   35728.941 - 3.03e-86
+PMB+I+G4         -17731.728   35545.456 - 5.03e-110   35550.194 - 1.73e-108   35735.905 - 9.31e-88
+rtREV+G4         -17737.596   35555.192 - 3.87e-112   35559.697 - 1.5e-110   35740.995 - 7.31e-89
+PMB+R4           -17723.449   35536.898 - 3.63e-108   35542.624 - 7.64e-107   35745.927 - 6.21e-90
+rtREV+I+G4       -17737.874   35557.747 - 1.08e-112   35562.484 - 3.72e-111   35748.196 -    2e-90
+rtREV+R4         -17724.681   35539.361 - 1.06e-108   35545.087 - 2.23e-107   35748.390 - 1.81e-90
+Blosum62+G4      -17751.610   35583.220 - 3.17e-118   35587.725 - 1.23e-116   35769.023 - 5.99e-95
+Blosum62+I+G4    -17751.788   35585.576 - 9.77e-119   35590.313 - 3.37e-117   35776.025 - 1.81e-96
+Blosum62+R4      -17743.355   35576.710 - 8.22e-117   35582.436 - 1.73e-115   35785.739 - 1.41e-98
+cpREV+G4         -17772.879   35625.758 - 1.84e-127   35630.263 - 7.12e-126   35811.561 - 3.47e-104
+cpREV+I+G4       -17773.090   35628.180 - 5.48e-128   35632.917 - 1.89e-126   35818.629 - 1.01e-105
+cpREV+R4         -17763.366   35616.733 - 1.68e-125   35622.459 - 3.52e-124   35825.762 - 2.86e-107
+mtZOA+F+R4       -17720.946   35569.892 - 2.49e-115   35581.710 - 2.49e-115   35867.178 - 2.91e-116
+mtZOA+F+G4       -17744.457   35606.913 - 2.27e-123   35616.899 - 5.68e-123   35880.974 - 2.94e-119
+mtZOA+F+I+G4     -17744.622   35609.244 - 7.09e-124   35619.583 - 1.48e-123   35887.949 - 8.98e-121
+DCMut+G4         -17815.465   35710.931 - 5.88e-146   35715.436 - 2.28e-144   35896.734 - 1.11e-122
+Dayhoff+G4       -17816.454   35712.908 - 2.19e-146   35717.414 - 8.47e-145   35898.712 - 4.13e-123
+DCMut+R4         -17801.858   35693.715 - 3.22e-142   35699.442 - 6.77e-141   35902.744 - 5.5e-124
+DCMut+I+G4       -17815.639   35713.278 - 1.82e-146   35718.016 - 6.27e-145   35903.727 - 3.36e-124
+Dayhoff+R4       -17802.747   35695.494 - 1.32e-142   35701.220 - 2.78e-141   35904.523 - 2.26e-124
+Dayhoff+I+G4     -17816.627   35715.254 - 6.77e-147   35719.991 - 2.33e-145   35905.703 - 1.25e-124
+mtREV+F+R4       -17756.105   35640.211 - 1.34e-130   35652.029 - 1.34e-130   35937.497 - 1.56e-131
+mtREV+F+G4       -17782.124   35682.249 - 9.95e-140   35692.234 - 2.49e-139   35956.309 - 1.29e-135
+mtREV+F+I+G4     -17782.321   35684.642 - 3.01e-140   35694.981 - 6.3e-140   35963.347 - 3.81e-137
+mtMet+F+R4       -17769.853   35667.705 - 1.43e-136   35679.524 - 1.43e-136   35964.991 - 1.67e-137
+FLU+F+R4         -17772.574   35673.148 - 9.41e-138   35684.966 - 9.41e-138   35970.434 - 1.1e-138
+mtMet+F+G4       -17790.567   35699.134 - 2.14e-143   35709.120 - 5.35e-143   35973.195 - 2.77e-139
+mtMet+F+I+G4     -17790.753   35701.506 - 6.55e-144   35711.845 - 1.37e-143   35980.211 - 8.29e-141
+FLU+F+G4         -17798.967   35715.935 - 4.82e-147   35725.920 - 1.2e-146   35989.995 - 6.23e-143
+FLU+F+I+G4       -17799.121   35718.241 - 1.52e-147   35728.580 - 3.18e-147   35996.947 - 1.93e-144
+HIVb+F+R4        -17851.214   35830.429 - 6.62e-172   35842.247 - 6.62e-172   36127.715 - 7.74e-173
+HIVb+F+G4        -17871.214   35860.429 - 2.02e-178   35870.415 - 5.06e-178   36134.489 - 2.62e-174
+HIVb+F+I+G4      -17871.410   35862.819 - 6.13e-179   35873.158 - 1.28e-178   36141.525 - 7.76e-176
+mtART+F+R4       -17894.783   35917.567 - 7.92e-191   35929.385 - 7.92e-191   36214.852 - 9.27e-192
+mtART+F+G4       -17928.274   35974.547 - 3.36e-203   35984.533 - 8.39e-203   36248.608 - 4.34e-199
+mtART+F+I+G4     -17928.370   35976.739 - 1.12e-203   35987.078 - 2.35e-203   36255.445 - 1.42e-200
+FLU+R4           -18023.131   36136.261 - 2.57e-238   36141.988 - 5.4e-237   36345.291 - 4.39e-220
+mtVer+F+R4       -17963.346   36054.692 - 1.33e-220   36066.510 - 1.33e-220   36351.977 - 1.55e-221
+FLU+G4           -18047.944   36175.888 - 6.38e-247   36180.394 - 2.47e-245   36361.692 - 1.21e-223
+FLU+I+G4         -18047.457   36176.914 - 3.82e-247   36181.652 - 1.32e-245   36367.363 - 7.07e-225
+mtVer+F+G4       -17987.972   36093.943 - 3.97e-229   36103.929 - 9.93e-229   36368.004 - 5.14e-225
+mtVer+F+I+G4     -17988.158   36096.315 - 1.21e-229   36106.654 - 2.54e-229   36375.020 - 1.54e-226
+HIVb+R4          -18102.045   36294.090 - 1.37e-272   36299.816 - 2.89e-271   36503.119 - 2.35e-254
+HIVb+G4          -18120.715   36321.430 - 1.59e-278   36325.935 - 6.15e-277   36507.233 -   3e-255
+HIVb+I+G4        -18120.612   36323.225 - 6.48e-279   36327.962 - 2.23e-277   36513.673 - 1.2e-256
+mtMAM+F+R4       -18093.140   36314.280 - 5.67e-277   36326.098 - 5.67e-277   36611.565 - 6.64e-278
+mtMAM+F+G4       -18126.866   36371.732 - 1.9e-289   36381.718 - 4.74e-289   36645.792 - 2.45e-285
+mtMAM+F+I+G4     -18127.058   36374.115 - 5.76e-290   36384.454 - 1.21e-289   36652.820 - 7.3e-287
+HIVw+F+R4        -18260.868   36649.736 -        0   36661.554 -        0   36947.021 -        0
+HIVw+F+G4        -18279.960   36677.921 -        0   36687.907 -        0   36951.981 -        0
+HIVw+F+I+G4      -18279.681   36679.363 -        0   36689.702 -        0   36958.068 -        0
+mtREV+R4         -18355.795   36801.591 -        0   36807.317 -        0   37010.620 -        0
+mtREV+G4         -18382.574   36845.149 -        0   36849.654 -        0   37030.953 -        0
+mtZOA+R4         -18369.194   36828.388 -        0   36834.114 -        0   37037.417 -        0
+mtREV+I+G4       -18382.717   36847.434 -        0   36852.171 -        0   37037.882 -        0
+mtZOA+G4         -18395.844   36871.688 -        0   36876.194 -        0   37057.492 -        0
+mtZOA+I+G4       -18395.954   36873.908 -        0   36878.645 -        0   37064.357 -        0
+mtVer+R4         -18563.357   37216.714 -        0   37222.440 -        0   37425.743 -        0
+mtVer+G4         -18592.511   37265.023 -        0   37269.528 -        0   37450.826 -        0
+mtVer+I+G4       -18592.711   37267.422 -        0   37272.159 -        0   37457.871 -        0
+mtMet+R4         -18607.282   37304.564 -        0   37310.290 -        0   37513.593 -        0
+mtMet+G4         -18634.146   37348.292 -        0   37352.797 -        0   37534.096 -        0
+mtMet+I+G4       -18634.274   37350.548 -        0   37355.285 -        0   37540.996 -        0
+HIVw+R4          -18726.945   37543.890 -        0   37549.616 -        0   37752.919 -        0
+HIVw+G4          -18748.707   37577.414 -        0   37581.920 -        0   37763.218 -        0
+mtMAM+R4         -18733.244   37556.488 -        0   37562.214 -        0   37765.517 -        0
+HIVw+I+G4        -18746.946   37575.891 -        0   37580.629 -        0   37766.340 -        0
+mtMAM+G4         -18771.133   37622.265 -        0   37626.771 -        0   37808.069 -        0
+mtMAM+I+G4       -18771.210   37624.419 -        0   37629.156 -        0   37814.868 -        0
+mtART+R4         -18770.439   37630.878 -        0   37636.604 -        0   37839.907 -        0
+mtART+G4         -18804.873   37689.746 -        0   37694.252 -        0   37875.550 -        0
+mtART+I+G4       -18804.573   37691.146 -        0   37695.883 -        0   37881.594 -        0
+mtInv+R4         -18854.019   37798.038 -        0   37803.764 -        0   38007.067 -        0
+mtInv+G4         -18873.938   37827.875 -        0   37832.381 -        0   38013.679 -        0
+mtInv+I+G4       -18873.882   37829.765 -        0   37834.502 -        0   38020.213 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: LG+F+G4
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.0937
+  pi(R) = 0.0550
+  pi(N) = 0.0552
+  pi(D) = 0.0530
+  pi(C) = 0.0099
+  pi(Q) = 0.0388
+  pi(E) = 0.0400
+  pi(G) = 0.0440
+  pi(H) = 0.0264
+  pi(I) = 0.0562
+  pi(L) = 0.0861
+  pi(K) = 0.0278
+  pi(M) = 0.0222
+  pi(F) = 0.0500
+  pi(P) = 0.0756
+  pi(S) = 0.0731
+  pi(T) = 0.0805
+  pi(W) = 0.0137
+  pi(Y) = 0.0416
+  pi(V) = 0.0572
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 3.7051
+
+ Category  Relative_rate  Proportion
+  1         0.4374         0.2500
+  2         0.7644         0.2500
+  3         1.0843         0.2500
+  4         1.7139         0.2500
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -17471.6785 (s.e. 376.2279)
+Unconstrained log-likelihood (without tree): -5023.0560
+Number of free parameters (#branches + #model parameters): 59
+Akaike information criterion (AIC) score: 35061.3571
+Corrected Akaike information criterion (AICc) score: 35071.3429
+Bayesian information criterion (BIC) score: 35335.4174
+
+Total tree length (sum of branch lengths): 19.9587
+Sum of internal branch lengths: 8.0935 (40.5512% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'virus4_cp' is drawn at root
+Numbers in parentheses are  standard bootstrap support (%)
+
++---virus4_cp
+|
++---BDX29428.1_coat_protein__Vitis_cryptic_virus_
+|
+|  +------AVL84363.1_coat_protein__Pepper_cryptic_virus_1_
++--| (92)
+   |     +-------AGQ49466.1_coat_protein__Beet_cryptic_virus_2_
+   |  +--| (81)
+   |  |  |                            +--------------------YP_004429259.1_putative_capsid_protein__Fig_cryptic_virus_
+   |  |  |                      +-----| (90)
+   |  |  |                      |     |   +-----QPL17799.1_coat_protein__Pistacia_cryptic_virus_
+   |  |  |                      |     +---| (83)
+   |  |  |                      |         +-------YP_009026398.1_Coat_Protein__Arhar_cryptic_virus-I_
+   |  |  |                +-----| (88)
+   |  |  |                |     |   +--------UZZ64778.1_coat_protein__Camellia_cryptic_virus_1_
+   |  |  |                |     +---| (93)
+   |  |  |                |         +-------YP_001274393.1_putative_coat_protein__Fragaria_chiloensis_cryptic_virus_
+   |  |  +----------------| (100)
+   |  |                   |                       +--YP_009508045.1_coat_protein__Carrot_cryptic_virus_
+   |  |                   |                    +--| (48)
+   |  |                   |                    |  |  +---ABN71240.1_coat_protein__Vicia_cryptic_virus_
+   |  |                   |                    |  +--| (81)
+   |  |                   |                    |     +--YP_086755.1_capsid_protein__White_clover_cryptic_virus_1_
+   |  |                   |            +-------| (93)
+   |  |                   |            |       +--ACA81390.1_coat_protein__Beet_cryptic_virus_1_
+   |  |                   |     +------| (90)
+   |  |                   |     |      +------------------WBQ21404.1_coat_protein__Medicago_sativa_alphapartitivirus_1_
+   |  |                   +-----| (92)
+   |  |                         |                    +--YP_009293580.1_coat_protein__Cannabis_cryptic_virus_
+   |  |                         |                 +--| (98)
+   |  |                         |                 |  +--YP_007891055.1_coat_protein__Dill_cryptic_virus_2_
+   |  |                         |              +--| (57)
+   |  |                         |              |  +---AGJ83770.1_coat_protein__Crimson_clover_cryptic_virus_2_
+   |  |                         +--------------| (100)
+   |  |                                        |  +--YP_007889826.1_coat_protein__Hop_trefoil_cryptic_virus_2_
+   |  |                                        +--| (93)
+   |  |                                           |  +--QKG32970.1_coat_protein__White_clover_cryptic_virus_2_
+   |  |                                           +--| (99)
+   |  |                                              +--YP_007889824.1_coat_protein__Red_clover_cryptic_virus_2_
+   +--| (88)
+      +-------WBR79751.1_coat_protein__Pepper_cryptic_virus_2_
+
+Tree in newick format:
+
+(virus4_cp:0.3777430381,BDX29428.1_coat_protein__Vitis_cryptic_virus_:0.3822088552,(AVL84363.1_coat_protein__Pepper_cryptic_virus_1_:0.6372002087,((AGQ49466.1_coat_protein__Beet_cryptic_virus_2_:0.7368386410,(((YP_004429259.1_putative_capsid_protein__Fig_cryptic_virus_:1.8704741798,(QPL17799.1_coat_protein__Pistacia_cryptic_virus_:0.6086038625,YP_009026398.1_Coat_Protein__Arhar_cryptic_virus-I_:0.7406683122)83:0.3662335322)90:0.5356937805,(UZZ64778.1_coat_protein__Camellia_cryptic_virus_1_:0.8618308318,YP_001274393.1_putative_coat_protein__Fragaria_chiloensis_cryptic_virus_:0.7789119296)93:0.4152650360)88:0.5653002863,((((YP_009508045.1_coat_protein__Carrot_cryptic_virus_:0.2497978264,(ABN71240.1_coat_protein__Vicia_cryptic_virus_:0.4092260952,YP_086755.1_capsid_protein__White_clover_cryptic_virus_1_:0.3406398155)81:0.1074364568)48:0.0938191237,ACA81390.1_coat_protein__Beet_cryptic_virus_1_:0.2474179965)93:0.7755653769,WBQ21404.1_coat_protein__Medicago_sativa_alphapartitivirus_1_:1.7167694401)90:0.6463433934,(((YP_009293580.1_coat_protein__Cannabis_cryptic_virus_:0.2044457940,YP_007891055.1_coat_protein__Dill_cryptic_virus_2_:0.1822985671)98:0.1338283480,AGJ83770.1_coat_protein__Crimson_clover_cryptic_virus_2_:0.3655035155)57:0.0613523725,(YP_007889826.1_coat_protein__Hop_trefoil_cryptic_virus_2_:0.1486157625,(QKG32970.1_coat_protein__White_clover_cryptic_virus_2_:0.1886946879,YP_007889824.1_coat_protein__Red_clover_cryptic_virus_2_:0.1093442409)99:0.1096864184)93:0.0784691528)100:1.3355189110)92:0.5314330794)100:1.5233986388)81:0.3136892054,WBR79751.1_coat_protein__Pepper_cryptic_virus_2_:0.7079885514)88:0.2886642949)92:0.2118118665);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -17471.679451
+Robinson-Foulds distance between ML tree and consensus tree: 0
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++---virus4_cp
+|
++---BDX29428.1_coat_protein__Vitis_cryptic_virus_
+|
+|  +------AVL84363.1_coat_protein__Pepper_cryptic_virus_1_
++--| (92)
+   |     +-------AGQ49466.1_coat_protein__Beet_cryptic_virus_2_
+   |  +--| (81)
+   |  |  |                            +--------------------YP_004429259.1_putative_capsid_protein__Fig_cryptic_virus_
+   |  |  |                      +-----| (90)
+   |  |  |                      |     |   +-----QPL17799.1_coat_protein__Pistacia_cryptic_virus_
+   |  |  |                      |     +---| (83)
+   |  |  |                      |         +-------YP_009026398.1_Coat_Protein__Arhar_cryptic_virus-I_
+   |  |  |                +-----| (88)
+   |  |  |                |     |   +--------UZZ64778.1_coat_protein__Camellia_cryptic_virus_1_
+   |  |  |                |     +---| (93)
+   |  |  |                |         +-------YP_001274393.1_putative_coat_protein__Fragaria_chiloensis_cryptic_virus_
+   |  |  +----------------| (100)
+   |  |                   |                       +--YP_009508045.1_coat_protein__Carrot_cryptic_virus_
+   |  |                   |                    +--| (48)
+   |  |                   |                    |  |  +---ABN71240.1_coat_protein__Vicia_cryptic_virus_
+   |  |                   |                    |  +--| (81)
+   |  |                   |                    |     +--YP_086755.1_capsid_protein__White_clover_cryptic_virus_1_
+   |  |                   |            +-------| (93)
+   |  |                   |            |       +--ACA81390.1_coat_protein__Beet_cryptic_virus_1_
+   |  |                   |     +------| (90)
+   |  |                   |     |      +------------------WBQ21404.1_coat_protein__Medicago_sativa_alphapartitivirus_1_
+   |  |                   +-----| (92)
+   |  |                         |                    +--YP_009293580.1_coat_protein__Cannabis_cryptic_virus_
+   |  |                         |                 +--| (98)
+   |  |                         |                 |  +--YP_007891055.1_coat_protein__Dill_cryptic_virus_2_
+   |  |                         |              +--| (57)
+   |  |                         |              |  +---AGJ83770.1_coat_protein__Crimson_clover_cryptic_virus_2_
+   |  |                         +--------------| (100)
+   |  |                                        |  +--YP_007889826.1_coat_protein__Hop_trefoil_cryptic_virus_2_
+   |  |                                        +--| (93)
+   |  |                                           |  +--QKG32970.1_coat_protein__White_clover_cryptic_virus_2_
+   |  |                                           +--| (99)
+   |  |                                              +--YP_007889824.1_coat_protein__Red_clover_cryptic_virus_2_
+   +--| (88)
+      +-------WBR79751.1_coat_protein__Pepper_cryptic_virus_2_
+
+
+Consensus tree in newick format: 
+
+(virus4_cp:0.3777342877,BDX29428.1_coat_protein__Vitis_cryptic_virus_:0.3821912342,(AVL84363.1_coat_protein__Pepper_cryptic_virus_1_:0.6371648066,((AGQ49466.1_coat_protein__Beet_cryptic_virus_2_:0.7367909125,(((YP_004429259.1_putative_capsid_protein__Fig_cryptic_virus_:1.8704483434,(QPL17799.1_coat_protein__Pistacia_cryptic_virus_:0.6085054275,YP_009026398.1_Coat_Protein__Arhar_cryptic_virus-I_:0.7407004362)83:0.3660294143)90:0.5356568398,(UZZ64778.1_coat_protein__Camellia_cryptic_virus_1_:0.8617908636,YP_001274393.1_putative_coat_protein__Fragaria_chiloensis_cryptic_virus_:0.7788841207)93:0.4155071441)88:0.5655034044,((((YP_009508045.1_coat_protein__Carrot_cryptic_virus_:0.2497344670,(ABN71240.1_coat_protein__Vicia_cryptic_virus_:0.4091626093,YP_086755.1_capsid_protein__White_clover_cryptic_virus_1_:0.3406130517)81:0.1074224186)48:0.0944556467,ACA81390.1_coat_protein__Beet_cryptic_virus_1_:0.2468377175)93:0.7760472845,WBQ21404.1_coat_protein__Medicago_sativa_alphapartitivirus_1_:1.7159022527)90:0.6456215047,(((YP_009293580.1_coat_protein__Cannabis_cryptic_virus_:0.2044107703,YP_007891055.1_coat_protein__Dill_cryptic_virus_2_:0.1823068560)98:0.1338502859,AGJ83770.1_coat_protein__Crimson_clover_cryptic_virus_2_:0.3654978807)57:0.0625884330,(YP_007889826.1_coat_protein__Hop_trefoil_cryptic_virus_2_:0.1486014274,(QKG32970.1_coat_protein__White_clover_cryptic_virus_2_:0.1886972468,YP_007889824.1_coat_protein__Red_clover_cryptic_virus_2_:0.1093380675)99:0.1096928063)93:0.0768901183)100:1.3361523574)92:0.5321923909)100:1.5232404133)81:0.3137259365,WBR79751.1_coat_protein__Pepper_cryptic_virus_2_:0.7079745446)88:0.2886604789)92:0.2118149045);
+
+TIME STAMP
+----------
+
+Date and time: Sat Sep  9 05:24:33 2023
+Total CPU time used: 124.590181 seconds (0h:2m:4s)
+Total wall-clock time used: 42.30262095 seconds (0h:0m:42s)
+

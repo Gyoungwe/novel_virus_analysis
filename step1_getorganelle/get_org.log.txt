@@ -1,0 +1,119 @@
+
+GetOrganelle v1.7.7.0
+
+get_organelle_from_reads.py assembles organelle genomes from genome skimming data.
+Find updates in https://github.com/Kinggerm/GetOrganelle and see README.md for more information.
+
+Python 3.7.12 | packaged by conda-forge | (default, Oct 26 2021, 06:08:21)  [GCC 9.4.0]
+PLATFORM: Linux login 3.10.0-1160.el7.x86_64 #1 SMP Mon Oct 19 16:18:59 UTC 2020 x86_64 x86_64
+PYTHON LIBS: GetOrganelleLib 1.7.7.0; numpy 1.21.6; sympy 1.10.1; scipy 1.7.3
+DEPENDENCIES: Bowtie2 2.3.5.1; SPAdes 3.13.0; Blast 2.5.0
+GETORG_PATH=/share/home/gaoyangwei/.GetOrganelle
+LABEL DB: embplant_pt 0.0.1; embplant_mt 0.0.1
+WORKING DIR: /share/home/gaoyangwei/exercise/project/aphid_virus/step10_getorganelle
+/share/home/gaoyangwei/miniconda3/envs/getorganelle/bin/get_organelle_from_reads.py -1 JPSH_1.fq.gz -2 JPSH_2.fq.gz -o plastome_output -R 50 -k 21,35,45,65,85,105,111,115,121,125,135,145 -F embplant_pt -t 20 -s ref.fasta --overwrite -w 85
+
+2023-07-19 15:47:57,390 - INFO: Pre-reading fastq ...
+2023-07-19 15:47:57,390 - INFO: Estimating reads to use ... (to use all reads, set '--reduce-reads-for-coverage inf --max-reads inf')
+2023-07-19 15:47:57,486 - INFO: Tasting 100000+100000 reads ...
+2023-07-19 15:49:10,485 - INFO: Estimating reads to use finished.
+2023-07-19 15:49:10,485 - INFO: Unzipping reads file: JPSH_1.fq.gz (1043417956 bytes)
+2023-07-19 15:49:10,534 - INFO: Unzipping reads file: JPSH_2.fq.gz (1118769105 bytes)
+2023-07-19 15:49:10,578 - INFO: Counting read qualities ...
+2023-07-19 15:49:10,734 - INFO: Identified quality encoding format = Sanger
+2023-07-19 15:49:10,734 - INFO: Phred offset = 33
+2023-07-19 15:49:10,736 - INFO: Trimming bases with qualities (0.00%): 33..33  !
+2023-07-19 15:49:10,774 - INFO: Mean error rate = 0.0033
+2023-07-19 15:49:10,775 - INFO: Counting read lengths ...
+2023-07-19 15:49:10,803 - INFO: Mean = 150.0 bp, maximum = 150 bp.
+2023-07-19 15:49:10,803 - INFO: Reads used = 10899+10899
+2023-07-19 15:49:10,803 - INFO: Pre-reading fastq finished.
+
+2023-07-19 15:49:10,803 - INFO: Making seed reads ...
+2023-07-19 15:49:10,820 - INFO: Making seed - bowtie2 index ...
+2023-07-19 15:49:11,098 - INFO: Making seed - bowtie2 index finished.
+2023-07-19 15:49:11,098 - INFO: Mapping reads to seed bowtie2 index ...
+2023-07-19 15:49:11,400 - INFO: Mapping finished.
+2023-07-19 15:49:11,401 - INFO: Seed reads made: plastome_output/seed/embplant_pt.initial.fq (4399589 bytes)
+2023-07-19 15:49:11,401 - INFO: Making seed reads finished.
+
+2023-07-19 15:49:11,401 - INFO: Checking seed reads and parameters ...
+2023-07-19 15:49:11,892 - INFO: Estimated embplant_pt-hitting base-coverage = 70.45
+2023-07-19 15:49:12,172 - INFO: Setting '--max-extending-len inf'
+2023-07-19 15:49:12,194 - INFO: Checking seed reads and parameters finished.
+
+2023-07-19 15:49:12,194 - INFO: Making read index ...
+2023-07-19 15:49:12,329 - INFO: 14416 candidates in all 21798 reads
+2023-07-19 15:49:12,329 - INFO: Pre-grouping reads ...
+2023-07-19 15:49:12,329 - INFO: Setting '--pre-w 85'
+2023-07-19 15:49:12,331 - INFO: 2306/2306 used/duplicated
+2023-07-19 15:49:12,481 - INFO: 142 groups made.
+2023-07-19 15:49:12,482 - INFO: Making read index finished.
+
+2023-07-19 15:49:12,482 - INFO: Extending ...
+2023-07-19 15:49:12,482 - INFO: Adding initial words ...
+2023-07-19 15:49:12,937 - INFO: AW 316040
+2023-07-19 15:49:13,121 - INFO: Round 1: 14416/14416 AI 5871 AW 318872
+2023-07-19 15:49:13,183 - INFO: Round 2: 14416/14416 AI 5873 AW 318916
+2023-07-19 15:49:13,242 - INFO: Round 3: 14416/14416 AI 5873 AW 318916
+2023-07-19 15:49:13,242 - INFO: No more reads found and terminated ...
+2023-07-19 15:49:13,328 - INFO: Extending finished.
+
+2023-07-19 15:49:13,328 - INFO: Separating extended fastq file ... 
+2023-07-19 15:49:13,367 - INFO: Setting '-k 21,35,45,65,85,105,111,115,121,125'
+2023-07-19 15:49:13,367 - INFO: Assembling using SPAdes ...
+2023-07-19 15:49:13,392 - INFO: spades.py -t 20  --phred-offset 33 -1 plastome_output/extended_1_paired.fq -2 plastome_output/extended_2_paired.fq --s1 plastome_output/extended_1_unpaired.fq --s2 plastome_output/extended_2_unpaired.fq -k 21,35,45,65,85,105,111,115,121,125 -o plastome_output/extended_spades
+2023-07-19 15:51:28,697 - INFO: Insert size = 315.63, deviation = 65.3318, left quantile = 238, right quantile = 394
+2023-07-19 15:51:28,698 - INFO: Assembling finished.
+
+2023-07-19 15:51:37,552 - INFO: Slimming plastome_output/extended_spades/K125/assembly_graph.fastg finished!
+2023-07-19 15:51:38,855 - INFO: Slimming plastome_output/extended_spades/K121/assembly_graph.fastg finished!
+2023-07-19 15:51:39,914 - INFO: Slimming plastome_output/extended_spades/K115/assembly_graph.fastg finished!
+2023-07-19 15:51:40,932 - INFO: Slimming plastome_output/extended_spades/K111/assembly_graph.fastg finished!
+2023-07-19 15:51:41,956 - INFO: Slimming plastome_output/extended_spades/K105/assembly_graph.fastg finished!
+2023-07-19 15:51:42,974 - INFO: Slimming plastome_output/extended_spades/K85/assembly_graph.fastg finished!
+2023-07-19 15:51:44,034 - INFO: Slimming plastome_output/extended_spades/K65/assembly_graph.fastg finished!
+2023-07-19 15:51:45,282 - INFO: Slimming plastome_output/extended_spades/K45/assembly_graph.fastg finished!
+2023-07-19 15:51:45,283 - INFO: Slimming assembly graphs finished.
+
+2023-07-19 15:51:45,283 - INFO: Extracting embplant_pt from the assemblies ...
+2023-07-19 15:51:45,285 - INFO: Disentangling plastome_output/extended_spades/K125/assembly_graph.fastg.extend-embplant_pt-embplant_mt.fastg as a circular genome ... 
+2023-07-19 15:51:45,311 - INFO: Disentangling failed: 'Incomplete/Complicated graph: please check around EDGE_13362!'
+2023-07-19 15:51:45,312 - INFO: Disentangling plastome_output/extended_spades/K121/assembly_graph.fastg.extend-embplant_pt-embplant_mt.fastg as a circular genome ... 
+2023-07-19 15:51:45,337 - INFO: Disentangling failed: 'Incomplete/Complicated graph: please check around EDGE_13620!'
+2023-07-19 15:51:45,338 - INFO: Disentangling plastome_output/extended_spades/K115/assembly_graph.fastg.extend-embplant_pt-embplant_mt.fastg as a circular genome ... 
+2023-07-19 15:51:45,361 - INFO: Disentangling failed: 'Incomplete/Complicated graph: please check around EDGE_14028!'
+2023-07-19 15:51:45,362 - INFO: Disentangling plastome_output/extended_spades/K111/assembly_graph.fastg.extend-embplant_pt-embplant_mt.fastg as a circular genome ... 
+2023-07-19 15:51:45,376 - INFO: Disentangling failed: 'Incomplete/Complicated graph: please check around EDGE_14186!'
+2023-07-19 15:51:45,376 - INFO: Disentangling plastome_output/extended_spades/K105/assembly_graph.fastg.extend-embplant_pt-embplant_mt.fastg as a circular genome ... 
+2023-07-19 15:51:45,394 - INFO: Disentangling failed: 'Incomplete/Complicated graph: please check around EDGE_14610!'
+2023-07-19 15:51:45,395 - INFO: Disentangling plastome_output/extended_spades/K85/assembly_graph.fastg.extend-embplant_pt-embplant_mt.fastg as a circular genome ... 
+2023-07-19 15:51:45,559 - INFO: Disentangling failed: 'Incomplete/Complicated graph: please check around EDGE_15866_15860_15970_15934_15942_15950_15958_15966_15972_15740_15720_3100_15736_15318!'
+2023-07-19 15:51:45,559 - INFO: Disentangling plastome_output/extended_spades/K65/assembly_graph.fastg.extend-embplant_pt-embplant_mt.fastg as a circular genome ... 
+2023-07-19 15:51:45,946 - INFO: Disentangling failed: 'Incomplete/Complicated graph: please check around EDGE_18744_18692_18700_18708_19034_18934_18942_18950_18958_18966_18974_18982_18990_18998_19006_19014_19022_19030_19036_16412_17072_1060_24_276_26_4408_218_17186!'
+2023-07-19 15:51:45,947 - INFO: Disentangling plastome_output/extended_spades/K45/assembly_graph.fastg.extend-embplant_pt-embplant_mt.fastg as a circular genome ... 
+2023-07-19 15:51:46,429 - INFO: Disentangling failed: 'Incomplete/Complicated graph: please check around EDGE_1496_2064_2062_428_2442_8808_570_574_186_2362_1368_1222_1206_1210_8196_8096_8104_8112_8120_8128_8136_8144_8152_8160_8866_8192_8198_2038_364_368_8532_8530_8834_8678_2072_8582_1280_1960_8730_2560_460_252_180!'
+2023-07-19 15:51:46,430 - INFO: Scaffolding disconnected contigs using SPAdes scaffolds ... 
+2023-07-19 15:51:46,430 - WARNING: Assembly based on scaffolding may not be as accurate as the ones directly exported from the assembly graph.
+2023-07-19 15:51:46,430 - INFO: Disentangling plastome_output/extended_spades/K125/assembly_graph.fastg.extend-embplant_pt-embplant_mt.fastg as a circular genome ... 
+2023-07-19 15:51:46,432 - INFO: Disentangling failed: 'No new connections.'
+2023-07-19 15:51:46,432 - INFO: Disentangling plastome_output/extended_spades/K125/assembly_graph.fastg.extend-embplant_pt-embplant_mt.fastg as a/an embplant_pt-insufficient graph ... 
+2023-07-19 15:51:46,441 - INFO: Average embplant_pt coverage = 174.3
+2023-07-19 15:51:46,441 - INFO: Average embplant_pt base-coverage = 1005.5
+2023-07-19 15:51:46,441 - INFO: Writing output ...
+2023-07-19 15:51:46,442 - INFO: Writing PATH1 of embplant_pt scaffold(s) to plastome_output/embplant_pt.K125.scaffolds.graph1.1.path_sequence.fasta
+2023-07-19 15:51:46,442 - INFO: Writing GRAPH to plastome_output/embplant_pt.K125.contigs.graph1.selected_graph.gfa
+2023-07-19 15:51:46,443 - INFO: Result status of embplant_pt: 1 scaffold(s)
+2023-07-19 15:51:46,475 - INFO: Writing output finished.
+2023-07-19 15:51:46,476 - INFO: Please ...
+2023-07-19 15:51:46,477 - INFO: load the graph file 'assembly_graph.fastg.extend-embplant_pt-embplant_mt.fastg' in K125,K121,K115,K111,K105,K85,K65,K45
+2023-07-19 15:51:46,477 - INFO: load the CSV file 'assembly_graph.fastg.extend-embplant_pt-embplant_mt.csv' in K125,K121,K115,K111,K105,K85,K65,K45
+2023-07-19 15:51:46,477 - INFO: visualize and confirm the incomplete result in Bandage.
+2023-07-19 15:51:46,477 - INFO: If the result is nearly complete, 
+2023-07-19 15:51:46,477 - INFO: you can also adjust the arguments according to https://github.com/Kinggerm/GetOrganelle/wiki/FAQ#what-should-i-do-with-incomplete-resultbroken-assembly-graph
+2023-07-19 15:51:46,477 - INFO: If you have questions for us, please provide us with the get_org.log.txt file and the post-slimming graph in the format you like!
+2023-07-19 15:51:46,477 - INFO: Extracting embplant_pt from the assemblies finished.
+
+
+Total cost 231.45 s
+Thank you!

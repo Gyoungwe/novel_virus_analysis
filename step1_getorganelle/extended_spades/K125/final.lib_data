@@ -1,0 +1,118 @@
+---
+max read length: 150
+nomerge max read length: 150
+average read length: 150
+average coverage: 5.70982
+libraries:       
+    - type:            paired-end
+      orientation:     fr
+      left reads:      
+        - /share/home/gaoyangwei/exercise/project/aphid_virus/step10_getorganelle/plastome_output/extended_spades/corrected/extended_1_paired.00.0_0.cor.fastq.gz
+      right reads:     
+        - /share/home/gaoyangwei/exercise/project/aphid_virus/step10_getorganelle/plastome_output/extended_spades/corrected/extended_2_paired.00.0_0.cor.fastq.gz
+      single reads:    
+        - /share/home/gaoyangwei/exercise/project/aphid_virus/step10_getorganelle/plastome_output/extended_spades/corrected/extended__unpaired.00.0_0.cor.fastq.gz
+      data:            
+        unmerged read length: 150
+        merged read length: 0
+        insert size mean: 315.63
+        insert size deviation: 65.3318
+        insert size left quantile: 238
+        insert size right quantile: 394
+        insert size median: 314
+        insert size mad: 47
+        insert size distribution: { 130: 1, 131: 1, 132: 1, 137: 1, 140: 1, 
+                                    144: 1, 148: 1, 152: 1, 159: 1, 160: 1, 
+                                    161: 2, 163: 1, 165: 1, 167: 1, 169: 2, 
+                                    170: 2, 171: 1, 172: 1, 174: 1, 176: 1, 
+                                    178: 2, 181: 1, 184: 2, 187: 2, 190: 1, 
+                                    191: 1, 192: 1, 194: 1, 197: 1, 198: 1, 
+                                    199: 2, 201: 3, 202: 2, 203: 1, 205: 2, 
+                                    206: 2, 207: 1, 209: 1, 210: 2, 212: 2, 
+                                    214: 1, 215: 1, 217: 1, 219: 1, 220: 1, 
+                                    222: 5, 223: 1, 225: 1, 227: 1, 228: 1, 
+                                    229: 2, 230: 2, 231: 1, 232: 1, 234: 2, 
+                                    236: 2, 237: 2, 238: 4, 239: 2, 241: 3, 
+                                    242: 1, 243: 4, 245: 5, 246: 2, 247: 2, 
+                                    248: 4, 249: 2, 251: 1, 252: 5, 253: 4, 
+                                    254: 6, 255: 7, 256: 5, 257: 4, 258: 4, 
+                                    259: 1, 260: 2, 261: 3, 262: 1, 263: 1, 
+                                    264: 5, 265: 3, 266: 4, 267: 4, 268: 1, 
+                                    269: 2, 270: 5, 271: 6, 272: 8, 273: 5, 
+                                    274: 2, 275: 3, 276: 6, 277: 9, 278: 2, 
+                                    279: 5, 280: 3, 281: 5, 282: 5, 283: 4, 
+                                    284: 6, 285: 2, 286: 4, 287: 2, 288: 7, 
+                                    289: 7, 290: 5, 291: 2, 292: 14, 293: 4, 
+                                    294: 9, 295: 5, 296: 2, 297: 5, 298: 3, 
+                                    299: 3, 300: 4, 301: 7, 302: 3, 303: 2, 
+                                    304: 6, 305: 5, 306: 5, 307: 5, 308: 3, 
+                                    309: 6, 310: 10, 311: 7, 312: 7, 313: 9, 
+                                    314: 12, 315: 8, 316: 10, 318: 5, 319: 2, 
+                                    320: 2, 321: 2, 322: 3, 323: 5, 324: 3, 
+                                    325: 3, 326: 3, 327: 11, 328: 9, 329: 8, 
+                                    330: 3, 331: 4, 332: 2, 333: 5, 334: 9, 
+                                    335: 3, 336: 7, 337: 11, 338: 6, 339: 5, 
+                                    340: 2, 341: 5, 342: 1, 343: 4, 344: 6, 
+                                    345: 4, 346: 5, 347: 6, 348: 2, 349: 8, 
+                                    350: 4, 351: 6, 352: 2, 353: 2, 354: 4, 
+                                    355: 3, 356: 4, 357: 4, 358: 8, 359: 5, 
+                                    360: 4, 361: 6, 362: 9, 363: 3, 364: 8, 
+                                    366: 4, 367: 3, 368: 5, 369: 4, 370: 3, 
+                                    371: 5, 372: 1, 373: 3, 375: 7, 376: 3, 
+                                    377: 4, 378: 6, 380: 3, 383: 5, 384: 5, 
+                                    385: 2, 387: 1, 388: 1, 389: 5, 390: 2, 
+                                    391: 3, 392: 4, 393: 2, 394: 5, 395: 4, 
+                                    396: 1, 397: 2, 398: 3, 399: 1, 400: 3, 
+                                    403: 1, 404: 1, 405: 4, 408: 4, 410: 3, 
+                                    411: 5, 413: 2, 415: 3, 417: 1, 419: 1, 
+                                    421: 1, 423: 3, 426: 1, 427: 1, 430: 1, 
+                                    432: 3, 434: 1, 436: 4, 439: 1, 441: 1, 
+                                    442: 1, 446: 1, 447: 2, 452: 1, 454: 2, 
+                                    462: 1, 463: 2, 470: 2, 472: 1, 473: 1, 
+                                    479: 1, 485: 1, 509: 1, 516: 2, 574: 2, 
+                                    584: 1 }
+        pi threshold:    0
+        binary converted: true
+        single reads mapped: false
+        library index:   0
+        number of reads: 11759
+        total nucleotides: 1763850
+    - type:            single
+      single reads:    
+        - /share/home/gaoyangwei/exercise/project/aphid_virus/step10_getorganelle/plastome_output/extended_spades/corrected/extended_1_unpaired.00.1_0.cor.fastq.gz
+      data:            
+        unmerged read length: 150
+        merged read length: 0
+        insert size mean: 0
+        insert size deviation: 0
+        insert size left quantile: 0
+        insert size right quantile: 0
+        insert size median: 0
+        insert size mad: 0
+        insert size distribution: {  }
+        pi threshold:    0
+        binary converted: true
+        single reads mapped: true
+        library index:   1
+        number of reads: 64
+        total nucleotides: 9600
+    - type:            single
+      single reads:    
+        - /share/home/gaoyangwei/exercise/project/aphid_virus/step10_getorganelle/plastome_output/extended_spades/corrected/extended_2_unpaired.00.2_0.cor.fastq.gz
+      data:            
+        unmerged read length: 150
+        merged read length: 0
+        insert size mean: 0
+        insert size deviation: 0
+        insert size left quantile: 0
+        insert size right quantile: 0
+        insert size median: 0
+        insert size mad: 0
+        insert size distribution: {  }
+        pi threshold:    0
+        binary converted: true
+        single reads mapped: true
+        library index:   2
+        number of reads: 44
+        total nucleotides: 6600
+...

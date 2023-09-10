@@ -1,0 +1,20 @@
+2023-07-19 15:51:39,598 - INFO: Slimming file 1/1: plastome_output/extended_spades/K115/assembly_graph.fastg
+2023-07-19 15:51:39,602 - INFO: Parsing input finished.
+2023-07-19 15:51:39,603 - INFO: Preparing fasta file finished.
+2023-07-19 15:51:39,603 - INFO: Executing BLAST to /share/home/gaoyangwei/.GetOrganelle/LabelDatabase/embplant_pt ...
+2023-07-19 15:51:39,604 - INFO: Executing BLAST ...
+2023-07-19 15:51:39,721 - INFO: Executing BLAST finished.
+2023-07-19 15:51:39,722 - INFO: Executing BLAST to /share/home/gaoyangwei/.GetOrganelle/LabelDatabase/embplant_pt finished.
+2023-07-19 15:51:39,724 - INFO: Parsing blast result finished.
+2023-07-19 15:51:39,725 - INFO: Executing BLAST to /share/home/gaoyangwei/.GetOrganelle/LabelDatabase/embplant_mt ...
+2023-07-19 15:51:39,725 - INFO: Executing BLAST ...
+2023-07-19 15:51:39,799 - INFO: Executing BLAST finished.
+2023-07-19 15:51:39,799 - INFO: Executing BLAST to /share/home/gaoyangwei/.GetOrganelle/LabelDatabase/embplant_mt finished.
+2023-07-19 15:51:39,800 - INFO: Parsing blast result finished.
+2023-07-19 15:51:39,802 - INFO: No enough coverage information found.
+2023-07-19 15:51:39,803 - INFO: Mapping names ...
+2023-07-19 15:51:39,805 - INFO: Mapping names finished.
+2023-07-19 15:51:39,805 - INFO: Generating slimmed file to /share/home/gaoyangwei/exercise/project/aphid_virus/step10_getorganelle/plastome_output/extended_spades/K115/assembly_graph.fastg.extend-embplant_pt-embplant_mt.fastg
+2023-07-19 15:51:39,811 - INFO: Generating notation table to /share/home/gaoyangwei/exercise/project/aphid_virus/step10_getorganelle/plastome_output/extended_spades/K115/assembly_graph.fastg.extend-embplant_pt-embplant_mt.csv
+2023-07-19 15:51:39,811 - INFO: Slimming file 1/1: plastome_output/extended_spades/K115/assembly_graph.fastg finished!
+

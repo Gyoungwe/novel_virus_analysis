@@ -1,0 +1,14 @@
+- "left reads":
+  - "/share/home/gaoyangwei/exercise/project/aphid_virus/step10_getorganelle/plastome_output/extended_spades/corrected/extended_1_paired.00.0_0.cor.fastq.gz"
+  "orientation": "fr"
+  "right reads":
+  - "/share/home/gaoyangwei/exercise/project/aphid_virus/step10_getorganelle/plastome_output/extended_spades/corrected/extended_2_paired.00.0_0.cor.fastq.gz"
+  "single reads":
+  - "/share/home/gaoyangwei/exercise/project/aphid_virus/step10_getorganelle/plastome_output/extended_spades/corrected/extended__unpaired.00.0_0.cor.fastq.gz"
+  "type": "paired-end"
+- "single reads":
+  - "/share/home/gaoyangwei/exercise/project/aphid_virus/step10_getorganelle/plastome_output/extended_spades/corrected/extended_1_unpaired.00.1_0.cor.fastq.gz"
+  "type": "single"
+- "single reads":
+  - "/share/home/gaoyangwei/exercise/project/aphid_virus/step10_getorganelle/plastome_output/extended_spades/corrected/extended_2_unpaired.00.2_0.cor.fastq.gz"
+  "type": "single"

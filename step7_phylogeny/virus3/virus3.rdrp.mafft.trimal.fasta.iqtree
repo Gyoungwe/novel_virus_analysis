@@ -1,0 +1,309 @@
+IQ-TREE 2.0.3 built Dec 20 2020
+
+Input file name: virus3.rdrp.mafft.trimal.fasta
+Type of analysis: ModelFinder + tree reconstruction + non-parametric bootstrap (1000 replicates)
+Random seed number: 961481
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 21 sequences with 428 amino-acid sites
+Number of constant sites: 20 (= 4.6729% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 20 (= 4.6729% of all sites)
+Number of parsimony informative sites: 395
+Number of distinct site patterns: 420
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: LG+F+I+G4
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+LG+F+I+G4        -15964.821   32049.643 -  0.00223   32069.588 -  0.00979   32293.190 +    0.882
+LG+F+R4          -15954.718   32037.437 +    0.997   32060.357 +    0.989   32297.221 +    0.118
+rtREV+F+R4       -15961.720   32051.439 - 0.000908   32074.359 - 0.000901   32311.223 - 0.000107
+rtREV+F+I+G4     -15977.063   32074.127 - 1.08e-08   32094.072 - 4.72e-08   32317.674 - 4.26e-06
+Blosum62+F+R4    -15995.417   32118.833 - 2.11e-18   32141.753 - 2.09e-18   32378.617 - 2.49e-19
+Blosum62+F+I+G4  -16012.769   32145.537 - 3.35e-24   32165.483 - 1.47e-23   32389.085 - 1.33e-21
+LG+I+G4          -16078.560   32239.119 -  1.6e-44   32248.042 - 1.74e-41   32405.544 - 3.54e-25
+VT+F+R4          -16010.671   32149.343 -    5e-25   32172.263 - 4.96e-25   32409.127 - 5.89e-26
+LG+R4            -16068.512   32227.023 - 6.77e-42   32237.861 - 2.82e-39   32409.684 - 4.46e-26
+PMB+R4           -16069.969   32229.938 - 1.58e-42   32240.776 - 6.57e-40   32412.599 - 1.04e-26
+PMB+I+G4         -16083.725   32249.450 - 9.13e-47   32258.372 - 9.93e-44   32415.874 - 2.02e-27
+VT+F+I+G4        -16026.325   32172.649 - 4.34e-30   32192.595 - 1.91e-29   32416.197 - 1.72e-27
+LG+R3            -16078.355   32242.711 - 2.65e-45   32252.565 - 1.81e-42   32417.253 - 1.01e-27
+LG+R5            -16067.520   32229.041 - 2.47e-42   32240.914 - 6.14e-40   32419.819 - 2.81e-28
+WAG+F+R4         -16016.397   32160.793 - 1.63e-27   32183.713 - 1.62e-27   32420.577 - 1.92e-28
+WAG+F+I+G4       -16031.735   32183.469 - 1.94e-32   32203.415 - 8.53e-32   32427.017 - 7.68e-30
+PMB+F+R4         -16025.719   32179.437 - 1.46e-31   32202.357 - 1.45e-31   32439.221 - 1.72e-32
+PMB+F+I+G4       -16039.052   32198.104 - 1.29e-35   32218.050 - 5.66e-35   32441.652 -  5.1e-33
+LG+G4            -16100.923   32281.845 - 8.44e-54   32290.320 - 1.15e-50   32444.210 - 1.42e-33
+Blosum62+R4      -16095.756   32281.512 - 9.97e-54   32292.349 - 4.16e-51   32464.172 - 6.57e-38
+Blosum62+I+G4    -16112.549   32307.098 - 2.77e-59   32316.020 - 3.01e-56   32473.522 - 6.13e-40
+LG+R2            -16120.673   32323.347 - 8.21e-63   32332.269 - 8.92e-60   32489.771 - 1.81e-43
+VT+R4            -16115.182   32320.363 - 3.65e-62   32331.201 - 1.52e-59   32503.024 -  2.4e-46
+VT+I+G4          -16130.949   32343.897 - 2.83e-67   32352.819 - 3.08e-64   32510.321 - 6.25e-48
+WAG+R4           -16130.152   32350.304 - 1.15e-68   32361.141 -  4.8e-66   32532.964 - 7.57e-53
+WAG+I+G4         -16146.822   32375.643 - 3.62e-74   32384.565 - 3.93e-71   32542.067 - 7.99e-55
+cpREV+F+R4       -16119.118   32366.237 - 3.99e-72   32389.157 - 3.96e-72   32626.021 -  4.7e-73
+cpREV+F+I+G4     -16141.377   32402.754 - 4.69e-80   32422.699 - 2.06e-79   32646.301 - 1.86e-77
+rtREV+R4         -16217.244   32524.489 - 1.72e-106   32535.326 - 7.2e-104   32707.149 - 1.14e-90
+rtREV+I+G4       -16231.316   32544.632 - 7.29e-111   32553.554 - 7.93e-108   32711.056 - 1.61e-91
+cpREV+R4         -16247.076   32584.152 - 1.91e-119   32594.990 - 7.97e-117   32766.813 - 1.26e-103
+cpREV+I+G4       -16268.238   32618.476 - 6.72e-127   32627.398 - 7.31e-124   32784.900 - 1.49e-107
+JTTDCMut+F+R4    -16203.505   32535.011 - 8.95e-109   32557.931 - 8.88e-109   32794.794 - 1.06e-109
+JTTDCMut+F+I+G4  -16216.683   32553.365 - 9.25e-113   32573.311 - 4.06e-112   32796.913 - 3.66e-110
+JTT+F+R4         -16205.010   32538.020 - 1.99e-109   32560.940 - 1.97e-109   32797.804 - 2.34e-110
+JTT+F+I+G4       -16217.915   32555.829 - 2.7e-113   32575.775 - 1.19e-112   32799.377 - 1.07e-110
+mtInv+F+I+G4     -16221.509   32563.019 - 7.41e-115   32582.964 - 3.26e-114   32806.566 - 2.93e-112
+mtInv+F+R4       -16213.465   32554.930 - 4.23e-113   32577.850 - 4.2e-113   32814.714 - 4.99e-114
+LG+I             -16293.234   32666.467 - 2.55e-137   32674.943 - 3.47e-134   32828.832 - 4.29e-117
+JTT+R4           -16284.127   32658.254 - 1.55e-135   32669.091 - 6.46e-133   32840.914 - 1.02e-119
+JTT+I+G4         -16297.950   32677.901 - 8.39e-140   32686.823 - 9.12e-137   32844.325 - 1.85e-120
+JTTDCMut+R4      -16286.178   32662.356 - 1.99e-136   32673.194 - 8.31e-134   32845.017 - 1.31e-120
+JTTDCMut+I+G4    -16300.245   32682.489 - 8.46e-141   32691.412 - 9.2e-138   32848.913 - 1.87e-121
+DCMut+F+R4       -16247.327   32622.654 - 8.33e-128   32645.574 - 8.26e-128   32882.438 - 9.82e-129
+Dayhoff+F+R4     -16247.530   32623.061 - 6.79e-128   32645.981 - 6.74e-128   32882.845 - 8.01e-129
+DCMut+F+I+G4     -16263.529   32647.059 - 4.18e-133   32667.004 - 1.83e-132   32890.606 - 1.65e-130
+Dayhoff+F+I+G4   -16263.641   32647.283 - 3.74e-133   32667.228 - 1.64e-132   32890.830 - 1.48e-130
+mtZOA+F+I+G4     -16292.868   32705.735 - 7.58e-146   32725.681 - 3.33e-145   32949.282 -   3e-143
+mtZOA+F+R4       -16288.658   32705.315 - 9.35e-146   32728.235 - 9.28e-146   32965.099 - 1.1e-146
+mtREV+F+I+G4     -16334.312   32788.624 - 7.59e-164   32808.570 - 3.33e-163   33032.172 -   3e-161
+mtREV+F+R4       -16323.686   32775.372 - 5.73e-161   32798.292 - 5.68e-161   33035.156 - 6.76e-162
+mtMet+F+I+G4     -16344.564   32809.128 - 2.68e-168   32829.073 - 1.18e-167   33052.675 - 1.06e-165
+LG               -16411.468   32900.935 - 3.11e-188   32908.976 - 5.25e-185   33059.241 - 3.98e-167
+mtMet+F+R4       -16336.732   32801.464 - 1.24e-166   32824.384 - 1.23e-166   33061.248 - 1.46e-167
+DCMut+R4         -16431.028   32952.056 - 2.46e-199   32962.894 - 1.03e-196   33134.717 - 1.62e-183
+Dayhoff+R4       -16431.272   32952.544 - 1.93e-199   32963.382 - 8.05e-197   33135.205 - 1.27e-183
+DCMut+I+G4       -16452.342   32986.684 - 7.45e-207   32995.606 - 8.1e-204   33153.108 - 1.65e-187
+Dayhoff+I+G4     -16452.603   32987.206 - 5.74e-207   32996.129 - 6.24e-204   33153.630 - 1.27e-187
+FLU+F+I+G4       -16426.311   32972.621 - 8.43e-204   32992.567 - 3.7e-203   33216.169 - 3.34e-201
+FLU+F+R4         -16417.346   32962.692 - 1.21e-201   32985.612 - 1.2e-201   33222.476 - 1.42e-202
+mtART+F+I+G4     -16466.362   33052.724 - 3.4e-221   33072.670 - 1.49e-220   33296.272 - 1.35e-218
+mtART+F+R4       -16463.288   33054.576 - 1.35e-221   33077.496 - 1.34e-221   33314.360 - 1.59e-222
+HIVb+F+R4        -16499.735   33127.470 -   2e-237   33150.390 - 1.98e-237   33387.253 - 2.36e-238
+HIVb+F+I+G4      -16512.748   33145.496 - 2.44e-241   33165.441 - 1.07e-240   33389.043 - 9.64e-239
+mtVer+F+I+G4     -16520.947   33161.895 - 6.7e-245   33181.840 - 2.94e-244   33405.442 - 2.65e-242
+mtVer+F+R4       -16513.613   33155.226 - 1.88e-243   33178.146 - 1.86e-243   33415.010 - 2.22e-244
+HIVb+R4          -16627.985   33345.970 - 7.15e-285   33356.808 - 2.98e-282   33528.631 - 4.71e-269
+HIVb+I+G4        -16641.935   33365.870 - 3.41e-289   33374.792 - 3.71e-286   33532.294 - 7.54e-270
+mtMAM+F+I+G4     -16619.853   33359.706 - 7.44e-288   33379.651 - 3.27e-287   33603.253 - 2.94e-285
+mtMAM+F+R4       -16611.713   33351.426 - 4.67e-286   33374.346 - 4.64e-286   33611.210 - 5.51e-287
+FLU+I+G4         -16708.064   33498.127 - 6.51e-318   33507.049 - 7.08e-315   33664.551 - 1.44e-298
+FLU+R4           -16698.857   33487.715 - 1.19e-315   33498.552 - 4.96e-313   33670.375 - 7.83e-300
+mtZOA+I+G4       -16863.207   33808.414 -        0   33817.336 -        0   33974.838 -        0
+mtZOA+R4         -16862.151   33814.301 -        0   33825.139 -        0   33996.962 -        0
+HIVw+F+R4        -16951.104   34030.209 -        0   34053.129 -        0   34289.993 -        0
+HIVw+F+I+G4      -16964.399   34048.798 -        0   34068.743 -        0   34292.345 -        0
+mtREV+I+G4       -17168.893   34419.787 -        0   34428.709 -        0   34586.211 -        0
+mtREV+R4         -17163.587   34417.174 -        0   34428.011 -        0   34599.834 -        0
+mtMet+I+G4       -17264.561   34611.123 -        0   34620.045 -        0   34777.547 -        0
+mtMet+R4         -17263.373   34616.746 -        0   34627.584 -        0   34799.406 -        0
+mtART+I+G4       -17310.910   34703.821 -        0   34712.743 -        0   34870.245 -        0
+mtART+R4         -17305.792   34701.584 -        0   34712.422 -        0   34884.244 -        0
+mtInv+I+G4       -17342.115   34766.231 -        0   34775.153 -        0   34932.655 -        0
+mtInv+R4         -17338.746   34767.492 -        0   34778.329 -        0   34950.152 -        0
+mtVer+I+G4       -17403.735   34889.470 -        0   34898.393 -        0   35055.894 -        0
+mtVer+R4         -17399.663   34889.326 -        0   34900.163 -        0   35071.986 -        0
+mtMAM+I+G4       -17488.845   35059.690 -        0   35068.612 -        0   35226.114 -        0
+mtMAM+R4         -17490.822   35071.644 -        0   35082.482 -        0   35254.305 -        0
+HIVw+I+G4        -17516.485   35114.969 -        0   35123.891 -        0   35281.393 -        0
+HIVw+R4          -17508.188   35106.376 -        0   35117.213 -        0   35289.036 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: LG+F+I+G4
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.0909
+  pi(R) = 0.0807
+  pi(N) = 0.0198
+  pi(D) = 0.0460
+  pi(C) = 0.0168
+  pi(Q) = 0.0268
+  pi(E) = 0.0530
+  pi(G) = 0.0689
+  pi(H) = 0.0215
+  pi(I) = 0.0515
+  pi(L) = 0.1220
+  pi(K) = 0.0444
+  pi(M) = 0.0210
+  pi(F) = 0.0398
+  pi(P) = 0.0539
+  pi(S) = 0.0758
+  pi(T) = 0.0530
+  pi(W) = 0.0177
+  pi(Y) = 0.0226
+  pi(V) = 0.0739
+
+Model of rate heterogeneity: Invar+Gamma with 4 categories
+Proportion of invariable sites: 0.0327
+Gamma shape alpha: 2.1766
+
+ Category  Relative_rate  Proportion
+  0         0              0.0327
+  1         0.3241         0.2418
+  2         0.6953         0.2418
+  3         1.1101         0.2418
+  4         2.0057         0.2418
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -15964.8212 (s.e. 264.4238)
+Unconstrained log-likelihood (without tree): -2579.1891
+Number of free parameters (#branches + #model parameters): 60
+Akaike information criterion (AIC) score: 32049.6424
+Corrected Akaike information criterion (AICc) score: 32069.5879
+Bayesian information criterion (BIC) score: 32293.1898
+
+Total tree length (sum of branch lengths): 18.7883
+Sum of internal branch lengths: 5.9595 (31.7192% of tree length)
+
+WARNING: 1 near-zero internal branches (<0.0023) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'BDR95925.1_Qingdao_RNA_virus_2_' is drawn at root
+Numbers in parentheses are  standard bootstrap support (%)
+
++--BDR95925.1_Qingdao_RNA_virus_2_
+|
++--virus3_rdrp
+|
+|                               +---------APG77101.1_Wuhan_insect_virus_18_
+|                         +-----| (70)
+|                         |     |               +----APG77263.1_Wenling_narna-like_virus_8_
+|                         |     |            +--| (86)
+|                         |     |            |  +-----APG77072.1_Beihai_narna-like_virus_24_
+|                         |     |        +---| (100)
+|                         |     |        |   +----APG77259.1_Wenling_narna-like_virus_7_
+|                         |     |     +--| (41)
+|                         |     |     |  |           +-----APG77148.1_Hubei_narna-like_virus_21_
+|                         |     |     |  +-----------| (100)
+|                         |     |     |              |     +--AJT39596.1_Narnaviridae_environmental_sample_
+|                         |     |     |              |  +--| (98)
+|                         |     |     |              |  |  +--AGW51782.2_Ochlerotatus-associated_narna-like_virus_2_
+|                         |     |     |              +--| (94)
+|                         |     |     |                 +--AGW51766.2_Ochlerotatus-associated_narna-like_virus_1_
+|                         |     |  +--| (14)
+|                         |     |  |  +----------UQB84404.1_Saccharomyces_23S_RNA_narnavirus_
+|                         |     +--| (25)
+|                         |        |  +---------UGZ04787.1_Saccharomyces_20S_RNA_narnavirus_
+|                         |        +--| (36)
+|                         |           +-------------APG77168.1_Shahe_narna-like_virus_4_
+|                   +-----| (99)
+|                   |     +----------------------YP_009342444.1_Wuhan_horsefly_Virus_3_
+|      +------------| (100)
+|      |            |                        +**ASN64762.1_Leptomonas_seymouri_RNA_virus_
+|      |            |                     +**| (35)
+|      |            |                     |  +**ATI23585.1_Leptomonas_Narna-like_virus_1_
+|      |            |      +--------------| (100)
+|      |            |      |              +**ANI86034.1_Leptomonas_seymouri_Narna-like_virus_1_
+|      |            +------| (99)
+|      |                   +----------------YP_009388589.1_Wilkie_narna-like_virus_1_
+|  +---| (98)
+|  |   |  +------YP_009333139.1_Beihai_narna-like_virus_22_
+|  |   +--| (93)
+|  |      +-----YP_009388579.1_Wilkie_narna-like_virus_2_
++--| (87)
+   +---YP_009333261.1_Beihai_narna-like_virus_23_
+
+Tree in newick format:
+
+(BDR95925.1_Qingdao_RNA_virus_2_:0.2285140917,virus3_rdrp:0.3014216905,(((((APG77101.1_Wuhan_insect_virus_18_:0.7982409376,(((((APG77263.1_Wenling_narna-like_virus_8_:0.4354550034,APG77072.1_Beihai_narna-like_virus_24_:0.4826296388)86:0.0991555189,APG77259.1_Wenling_narna-like_virus_7_:0.4260504939)100:0.3860694074,(APG77148.1_Hubei_narna-like_virus_21_:0.5361794438,((AJT39596.1_Narnaviridae_environmental_sample_:0.2483851414,AGW51782.2_Ochlerotatus-associated_narna-like_virus_2_:0.2688795378)98:0.1983986272,AGW51766.2_Ochlerotatus-associated_narna-like_virus_1_:0.2912593052)94:0.2304387416)100:0.9915237407)41:0.1720696642,UQB84404.1_Saccharomyces_23S_RNA_narnavirus_:0.9204308151)14:0.0888806177,(UGZ04787.1_Saccharomyces_20S_RNA_narnavirus_:0.8531031450,APG77168.1_Shahe_narna-like_virus_4_:1.1417911764)36:0.1720980211)25:0.1354827480)70:0.5406269023,YP_009342444.1_Wuhan_horsefly_Virus_3_:1.8507157636)99:0.5232856304,(((ASN64762.1_Leptomonas_seymouri_RNA_virus_:0.0000010000,ATI23585.1_Leptomonas_Narna-like_virus_1_:0.0000010000)35:0.0000010000,ANI86034.1_Leptomonas_seymouri_Narna-like_virus_1_:0.0000010000)100:1.1919274354,YP_009388589.1_Wilkie_narna-like_virus_1_:1.3777286986)99:0.5843956902)100:1.0918161625,(YP_009333139.1_Beihai_narna-like_virus_22_:0.5885212191,YP_009388579.1_Wilkie_narna-like_virus_2_:0.4939151069)93:0.2252846340)98:0.3793763285,YP_009333261.1_Beihai_narna-like_virus_23_:0.3936714463)87:0.1405940412);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -15965.643749
+Robinson-Foulds distance between ML tree and consensus tree: 6
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--BDR95925.1_Qingdao_RNA_virus_2_
+|
++---virus3_rdrp
+|
+|                                         +----------APG77101.1_Wuhan_insect_virus_18_
+|                                      +--| (25)
+|                                      |  |  +----------UGZ04787.1_Saccharomyces_20S_RNA_narnavirus_
+|                                      |  +--| (36)
+|                                      |     +--------------APG77168.1_Shahe_narna-like_virus_4_
+|                                   +--| (20)
+|                                   |  +-----------UQB84404.1_Saccharomyces_23S_RNA_narnavirus_
+|                           +-------| (70)
+|                           |       |          +----APG77263.1_Wenling_narna-like_virus_8_
+|                           |       |       +--| (86)
+|                           |       |       |  +-----APG77072.1_Beihai_narna-like_virus_24_
+|                           |       |  +----| (100)
+|                           |       |  |    +----APG77259.1_Wenling_narna-like_virus_7_
+|                           |       +--| (41)
+|                           |          |            +------APG77148.1_Hubei_narna-like_virus_21_
+|                           |          +------------| (100)
+|                           |                       |     +--AJT39596.1_Narnaviridae_environmental_sample_
+|                           |                       |  +--| (98)
+|                           |                       |  |  +--AGW51782.2_Ochlerotatus-associated_narna-like_virus_2_
+|                           |                       +--| (94)
+|                           |                          +--AGW51766.2_Ochlerotatus-associated_narna-like_virus_1_
+|                     +-----| (99)
+|                     |     +------------------------YP_009342444.1_Wuhan_horsefly_Virus_3_
+|       +-------------| (100)
+|       |             |                         +--ASN64762.1_Leptomonas_seymouri_RNA_virus_
+|       |             |                      +--| (39)
+|       |             |                      |  +--ANI86034.1_Leptomonas_seymouri_Narna-like_virus_1_
+|       |             |      +---------------| (100)
+|       |             |      |               +--ATI23585.1_Leptomonas_Narna-like_virus_1_
+|       |             +------| (99)
+|       |                    +-----------------YP_009388589.1_Wilkie_narna-like_virus_1_
+|  +----| (98)
+|  |    |  +------YP_009333139.1_Beihai_narna-like_virus_22_
+|  |    +--| (93)
+|  |       +-----YP_009388579.1_Wilkie_narna-like_virus_2_
++--| (87)
+   +----YP_009333261.1_Beihai_narna-like_virus_23_
+
+
+Consensus tree in newick format: 
+
+(BDR95925.1_Qingdao_RNA_virus_2_:0.2291041173,virus3_rdrp:0.3022873190,(((((((APG77101.1_Wuhan_insect_virus_18_:0.8787991102,(UGZ04787.1_Saccharomyces_20S_RNA_narnavirus_:0.8399831758,APG77168.1_Shahe_narna-like_virus_4_:1.1588959841)36:0.1523748209)25:0.1149642849,UQB84404.1_Saccharomyces_23S_RNA_narnavirus_:0.9217368709)20:0.0827784993,(((APG77263.1_Wenling_narna-like_virus_8_:0.4354848023,APG77072.1_Beihai_narna-like_virus_24_:0.4850928201)86:0.1009060889,APG77259.1_Wenling_narna-like_virus_7_:0.4256068537)100:0.3792069658,(APG77148.1_Hubei_narna-like_virus_21_:0.5302492736,((AJT39596.1_Narnaviridae_environmental_sample_:0.2489508180,AGW51782.2_Ochlerotatus-associated_narna-like_virus_2_:0.2690510033)98:0.2006486446,AGW51766.2_Ochlerotatus-associated_narna-like_virus_1_:0.2919020720)94:0.2358952605)100:0.9947553588)41:0.1263010756)70:0.6075713412,YP_009342444.1_Wuhan_horsefly_Virus_3_:1.9534612018)99:0.4773079161,(((ASN64762.1_Leptomonas_seymouri_RNA_virus_:0.0000021424,ANI86034.1_Leptomonas_seymouri_Narna-like_virus_1_:0.0000021424)39:0.0000021424,ATI23585.1_Leptomonas_Narna-like_virus_1_:0.0000021424)100:1.2107304303,YP_009388589.1_Wilkie_narna-like_virus_1_:1.3631917663)99:0.5643301053)100:1.0878995449,(YP_009333139.1_Beihai_narna-like_virus_22_:0.5937512066,YP_009388579.1_Wilkie_narna-like_virus_2_:0.4900911661)93:0.2184859278)98:0.3871051951,YP_009333261.1_Beihai_narna-like_virus_23_:0.3955743011)87:0.1398127948);
+
+TIME STAMP
+----------
+
+Date and time: Sun Aug 27 23:19:17 2023
+Total CPU time used: 63.058607 seconds (0h:1m:3s)
+Total wall-clock time used: 32.0086726 seconds (0h:0m:32s)
+
