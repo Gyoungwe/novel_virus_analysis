@@ -2,7 +2,7 @@
 The raw data used for this analysis can be downloaded from NCBI(...url...), and the intermediate files can be found on Zonodo.
 
   [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8337333.svg)](https://doi.org/10.5281/zenodo.8337333)
-## Step1 we assembled the chloroplast genome using `GetOrganelle` version (1.7.7.0)
+## Step1 We assembled the chloroplast genome using `GetOrganelle` version (1.7.7.0)
 ```
 #Maximum number of reads to be used per file
 --max-reads inf
@@ -21,7 +21,7 @@ trimmomatic PE ./JPSH_1.fq.gz  ./JPSH_2.fq.gz  -phred33 out_read1.fq read1_unpai
 ```
 
 ## Step3
-assembled the reads using `Trinity` version (2.15.110) with default parameters using `Singularity` version (3.10.0)
+Assembled the reads using `Trinity` version (2.15.110) with default parameters using `Singularity` version (3.10.0)
 
 ```
 singularity exec -e trinityrnaseq.v2.15.1.simg Trinity --seqType fq --left out_read1.fq --right out_read2.fq --output trinity.JPSH.Trinity.fasta --max_memory 100G --CPU 40
