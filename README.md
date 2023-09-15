@@ -1,6 +1,7 @@
 # Novel_virus_analyse
 The raw data used for this analysis can be downloaded from NCBI(...url...), and the intermediate files can be found on Zonodo(10.5281/zenodo.8337333).
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8337333.svg)](https://doi.org/10.5281/zenodo.8337333)
+
+  [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8337333.svg)](https://doi.org/10.5281/zenodo.8337333)
 ## Step1 we assembled the chloroplast genome using `GetOrganelle` version (1.7.7.0)
 ```
 #Maximum number of reads to be used per file
