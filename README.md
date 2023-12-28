@@ -3,7 +3,7 @@ The complete genome of Vo narna-like virus and raw data used for this analysis c
 
   [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10208202.svg)](https://doi.org/10.5281/zenodo.10208202)
 
-
+![image](https://github.com/Gyoungwe/novel_virus_analysis/blob/master/123.drawio.svg)
 
 ## Step1 We assembled the chloroplast genome using `GetOrganelle` version (1.7.7.0)
 ```
