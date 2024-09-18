@@ -63,7 +63,7 @@ samtools depth -d 300000 JPSH.sort.bam > JPSH.sort.depth
 	
 ## Step6 bowtie_siRNA
 `Cutadapt` version (4.4 15) played a role in the removal of adapter sequences and low-quality reads from raw data
-The sequence `"GTTCAGAGTTCTACAGTCCGACGATC"` is the 5' end adapter sequence.
+The sequence `"GTTCAGAGTTCTACAGTCCGACGATC"` is the 5' end adapter sequence.Or '-g GTTCAGAGTTCTACAGTCCGACGATC '
 ```
  cutadapt -a GTTCAGAGTTCTACAGTCCGACGATC JPSH.clean.fa.gz > JPSH.fq.cutadapt.gz
 ```
